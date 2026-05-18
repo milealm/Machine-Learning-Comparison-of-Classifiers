@@ -1,0 +1,14 @@
+- docker build constroi a imagem a partir do Docker File e -t vai dizar qual vai ser o nome dessa imagem
+
+docker build -t my-machine-learning .
+
+- run application and run what's written in CMD
+
+docker run -t my-machine-learning
+
+- rodar o docker e guardar o resultado dos testes também no na máquina local
+
+docker run -it -v $(pwd):/app my-machine-learning
+
+- rodar dentro da imagem
+docker run -it my-machine-learning bash
